@@ -1,6 +1,10 @@
 import './App.css'
 import Navbar from './componentes/Navbar/Navbar'
 import Hero from './componentes/Hero/Hero'
+import Contact from './componentes/Contact/Contact'
+import About from './componentes/About/About'
+import Skills from './componentes/Skills/Skills'
+import Footer from './componentes/Footer/Footer'
 
 function App() {
 
@@ -8,6 +12,10 @@ function App() {
     <>
     <Navbar></Navbar>
     <Hero></Hero>
+    <About></About>
+    <Skills></Skills>
+    <Contact></Contact>
+    <Footer></Footer>
     </>
   )
 }
