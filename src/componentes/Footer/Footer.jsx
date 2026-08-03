@@ -1,7 +1,7 @@
 function Footer() {
     return(
         <>
-        <footer>
+        <footer className="footer">
             <p>
                 © 2026 Jesús Canales.
                 Todos los derechos reservados.

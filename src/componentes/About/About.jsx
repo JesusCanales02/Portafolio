@@ -1,7 +1,7 @@
 function About() {
     return(
         <>
-        <section id="about">
+        <section id="about" className="about">
             <h2>Sobre mí</h2>
 
             <p>Soy Ingeniero en Software con interés en el desarrollo

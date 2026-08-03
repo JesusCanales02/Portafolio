@@ -1,25 +1,23 @@
 function Hero() {
     return(
         <>
-        <section>
-
-            <h1>Hola, soy Jesús Canales</h1>
+        <section id="home" className="hero">
+            <div className="hero-content">
+            <h1 className="hero-greeting">Hola, soy Jesús Canales</h1>
 
             <h2>Software Engineer</h2>
 
-            <p>
+            <p className="hero-description">
                 Soy Ingeniero en Software enfocado en el desarrollo
                 de aplicaciones web utilizando React,
                 JavaScript, Python y Flutter.
             </p>
 
-            <div>
-                <button>
-                    Ver Proyectos
-                </button>
-                <button>
+            <a href="/CV_Jesus_Canales.pdf"
+                target="_blank"
+                className="btn-primary">
                     Descargar CV
-                </button>
+                </a>
             </div>
 
         </section>
