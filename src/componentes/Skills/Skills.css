@@ -1,0 +1,47 @@
+.skills{
+
+    padding:100px 80px;
+
+    text-align:center;
+
+}
+
+.skills-container{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.skill{
+
+    padding:12px 24px;
+
+    background:#1e293b;
+
+    color:#3b82f6;
+
+    border:1px solid #3b82f6;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.skill:hover{
+
+    background:#3b82f6;
+
+    color:white;
+
+}

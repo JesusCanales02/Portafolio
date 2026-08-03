@@ -1,0 +1,23 @@
+.projects{
+
+    padding:100px 80px;
+
+}
+
+.projects h2{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:35px;
+
+}

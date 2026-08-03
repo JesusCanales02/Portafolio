@@ -1,27 +1,63 @@
-function ProjectCard({project}) {
-    return(
-        <>
-        <div>
-            <h3>{project.tittle}</h3>
-            <p>{project.description}</p>
-            <h4>tecnologias</h4>
+import "./ProjectCard.css";
 
-            <ul>
-                {project.technologies.map((tech, index) => (
-                    <li key={index}>
+function ProjectCard({ project }) {
+
+    return (
+
+        <div className="project-card">
+
+            <div className="project-image">
+
+                Imagen
+
+            </div>
+
+            <h3>
+
+                {project.title}
+
+            </h3>
+
+            <p>
+
+                {project.description}
+
+            </p>
+
+            <div className="tech-container">
+
+                {project.technologies.map((tech) => (
+
+                    <span key={tech} className="tech">
+
                         {tech}
-                    </li>
+
+                    </span>
+
                 ))}
-            </ul>
+
+            </div>
+
             <a
-            href={project.github}
-            target="_black"
-            rel="noreferrer"
+
+                href={project.github}
+
+                target="_blank"
+
+                rel="noreferrer"
+
+                className="github-btn"
+
             >
-                Ver github
+
+                Ver GitHub
+
             </a>
+
         </div>
-        </>
-    )
+
+    );
+
 }
-export default ProjectCard
+
+export default ProjectCard;
