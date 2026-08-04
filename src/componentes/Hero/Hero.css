@@ -1,6 +1,6 @@
 .hero{
 
-    min-height:100vh;
+    min-height:90vh;
 
     display:flex;
 
@@ -42,7 +42,7 @@
 
 .hero h2{
 
-    color:#94a3b8;
+    color:black;
 
     margin:20px 0;
 
@@ -52,7 +52,7 @@
 
 .hero-description{
 
-    color:#cbd5e1;
+    color:black;
 
     line-height:1.8;
 
