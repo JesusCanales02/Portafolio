@@ -1,29 +1,47 @@
+import "./Hero.css";
+import { Download } from "lucide-react";
+import jesus from "../../assets/imagenes/Jesús.png"
+
 function Hero() {
-    return(
-        <>
+    return (
         <section id="home" className="hero">
+
             <div className="hero-content">
-            <h1 className="hero-greeting">Hola, soy Jesús Canales</h1>
+                <h1>
+                    Jesús Canales
+                </h1>
 
-            <h2>Software Engineer</h2>
+                <h2>
+                    Software Engineer
+                </h2>
 
-            <p className="hero-description">
-                Soy Ingeniero en Software enfocado en el desarrollo
-                de aplicaciones web utilizando React,
-                JavaScript, Python y Flutter.
-            </p>
+                <p className="hero-description">
+                    Desarrollo aplicaciones web utilizando React,
+                    JavaScript, Python y Flutter. Me enfoco en crear
+                    interfaces modernas y soluciones funcionales para
+                    resolver problemas reales.
+                </p>
 
-            
-            <a href="/CV_Jesus_Canales.pdf"
-                target="_blank"
-                className="btn-primary">
+                <a
+                    href="/CV_Jesus_Canales.pdf"
+                    download
+                    className="btn-primary"
+                >
+                    <Download size={20}/>
                     Descargar CV
                 </a>
+
+            </div>
+
+            <div className="hero-image">
+                <img src={jesus}
+                alt="Jesus Canales" 
+                className="profile-image"/>
+
             </div>
 
         </section>
-        </>
-    )
-    
+    );
 }
-export default Hero
+
+export default Hero;
