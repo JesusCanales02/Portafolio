@@ -6,11 +6,11 @@ function ProjectCard({ project }) {
 
         <div className="project-card">
 
-            <div className="project-image">
-
-                Imagen
-
-            </div>
+            <img
+            src={project.image}
+            alt={project.title}
+            className="project-image"
+            />
 
             <h3>
 

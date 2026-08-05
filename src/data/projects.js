@@ -1,7 +1,13 @@
+import auris from "../assets/imagenes/auris2.png";
+import magicmenu from "../assets/imagenes/magic.png";
+import tareas from "../assets/imagenes/GestorTareas.png";
+import requisiciones from "../assets/imagenes/Requisicion.png";
+
 const projects = [
     {
         id: 1,
         tittle: "Sistema de requisiciones",
+        image: requisiciones,
         description: "Sistema web para administrar requisiciones mediante operaciones CRUD.",
         technologies: [
             "Python",
@@ -15,6 +21,7 @@ const projects = [
     {
         id : 2,
         title: "Magic Menu",
+        image : magicmenu,
         description:
             "Aplicación para gestionar y consultar menús digitales.",
         technologies: [
@@ -27,6 +34,7 @@ const projects = [
     {
         id: 3,
         title: "Auris",
+        image: auris,
         description:
             "Aplicación móvil para auditorías 5S utilizando Flutter.",
         technologies: [
@@ -40,6 +48,7 @@ const projects = [
     {
         id: 4,
         title: "Proyecto Tareas",
+        image: tareas,
         description:
             "Aplicación web desarrollada con React para administrar tareas.",
         technologies: [

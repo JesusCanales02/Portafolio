@@ -4,12 +4,17 @@
 
     border-radius:18px;
 
-    padding:25px;
+    padding:25px 65px;
 
     transition:.3s;
 
     border:1px solid #334155;
 
+}
+
+.project-image{
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .project-card:hover{

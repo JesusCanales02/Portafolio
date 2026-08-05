@@ -13,6 +13,7 @@ function Hero() {
                 JavaScript, Python y Flutter.
             </p>
 
+            
             <a href="/CV_Jesus_Canales.pdf"
                 target="_blank"
                 className="btn-primary">
