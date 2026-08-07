@@ -1,15 +1,27 @@
-section{
-
+section:not(.hero){
     padding:100px 80px;
-
 }
 
 @media (max-width:768px){
 
-    section{
-
+    section:not(.hero){
         padding:80px 25px;
-
     }
 
+}
+
+.about{
+    padding:100px 80px;
+}
+
+.skills{
+    padding:100px 80px;
+}
+
+.projects{
+    padding:100px 80px;
+}
+
+.contact{
+    padding:100px 80px;
 }
