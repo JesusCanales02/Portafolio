@@ -2,16 +2,44 @@ import "./Skills.css";
 
 function Skills() {
 
-    const skills = [
+    const skills = {
+        frontend : [
         "React",
-        "JavaScript",
-        "Python",
-        "Flask",
-        "Flutter",
-        "MySQL",
-        "Git",
-        "GitHub"
-    ];
+        "HTML",
+        "Tailwind CSS",
+        "Bootstrap",
+        "CSS",
+    ],
+
+        backend : [
+            "Flask",
+            "Django",
+            "Node.js"
+        ],
+
+        DataBase : [
+            "MySQL",
+            "MongoDB"
+        ],
+
+        Mobile: [
+            "Flutter",
+            "Android Studio"
+        ],
+
+        Herramientas : [
+            "Git",
+            "GitHub",
+            "VS Code"
+        ],
+
+        Lenguajes:[
+            "Python",
+            "Java",
+            "Javascript",
+            "C#"
+        ]
+}
 
     return (
 
