@@ -31,3 +31,19 @@
     flex-shrink:0;
 
 }
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 80px 25px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .contact p,
+    .contact a {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+}

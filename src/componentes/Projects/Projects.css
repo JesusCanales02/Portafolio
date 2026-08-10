@@ -21,3 +21,11 @@
     gap:35px;
 
 }
+@media (max-width: 768px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}

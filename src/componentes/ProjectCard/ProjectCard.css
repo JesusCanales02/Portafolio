@@ -110,3 +110,17 @@
     background:#1d4ed8;
 
 }
+
+@media (max-width: 768px) {
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+}

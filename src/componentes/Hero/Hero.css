@@ -117,3 +117,44 @@
         margin-bottom: 30px;
     }
 }
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+        text-align: center;
+
+        padding: 140px 25px 60px;
+
+        gap: 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin: 0 auto 30px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .profile-image {
+        width: 280px;
+        height: 340px;
+    }
+
+}

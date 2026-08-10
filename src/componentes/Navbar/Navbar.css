@@ -53,3 +53,23 @@
     color:white;
 
 }
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+}
