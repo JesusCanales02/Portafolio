@@ -48,16 +48,69 @@ function Skills() {
             <h2>Tecnologías</h2>
 
             <div className="skills-container">
+                <h3>Lenguajes de progración</h3>
+                <div className="Skills-lenguaje">
+                    {skills.Lenguajes.map((skill)=>(
+                        <span key={skill} className="skill">
+                            {skill}
+                        </span>
+                    ))}
+                </div>
 
-                {skills.map((skill) => (
+                <div className="skills-container">
+                    <h3>Frontend</h3>
+                    <div className="Skills-lenguaje">
+                        {skills.frontend.map((skill) => (
+                            <span key={skill} className="skill">
+                            {skill}
+                        </span>
+                        ))}
+                    </div>
+                </div>
 
-                    <span key={skill} className="skill">
+                <div className="skills-container">
+                    <h3>Backend</h3>
+                    <div className="Skills-lenguaje">
+                        {skills.backend.map((skill) => (
+                            <span key={skill} className="skill">
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </div>
 
-                        {skill}
+                <div className="skills-container">
+                    <h3>Desarrollo Movíl</h3>
+                    <div className="Skills-lenguaje">
+                        {skills.Mobile.map((skill) => (
+                            <span key={skill} className="skill">
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </div>
 
-                    </span>
+                <div className="skills-container">
+                    <h3>Base de datos</h3>
+                    <div className="Skills-lenguaje">
+                        {skills.DataBase.map((skill) => (
+                            <span className="skill" key={skill}>
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </div>
 
-                ))}
+                <div className="skills-container">
+                    <h3>Herramientas</h3>
+                    <div className="Skills-lenguaje">
+                        {skills.Herramientas.map((skill) =>(
+                            <span className="skill" key={skill}>
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </div>
 
             </div>
 
