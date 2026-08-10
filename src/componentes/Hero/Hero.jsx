@@ -16,10 +16,10 @@ function Hero() {
                 </h2>
 
                 <p className="hero-description">
-                    Desarrollo aplicaciones web utilizando React,
-                    JavaScript, Python y Flutter. Me enfoco en crear
-                    interfaces modernas y soluciones funcionales para
-                    resolver problemas reales.
+                    Soy Ingeniero de Software enfocado en 
+                    desarrollo Full Stack y aplicaciones móviles. 
+                    He trabajado con JavaScript, React, Python, Flask, Java, Flutter, MySQL, entre otras tecnologías, desarrollando aplicaciones y sistemas tanto en frontend como en backend. 
+                    
                 </p>
 
                 <a
