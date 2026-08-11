@@ -3,21 +3,21 @@ import "./Skills.css";
 function Skills() {
 
     const skills = {
-        frontend : [
-        "React",
-        "HTML",
-        "Tailwind CSS",
-        "Bootstrap",
-        "CSS",
-    ],
+        frontend: [
+            "React",
+            "HTML",
+            "Tailwind CSS",
+            "Bootstrap",
+            "CSS"
+        ],
 
-        backend : [
+        backend: [
             "Flask",
             "Django",
             "Node.js"
         ],
 
-        DataBase : [
+        DataBase: [
             "MySQL",
             "MongoDB"
         ],
@@ -27,50 +27,58 @@ function Skills() {
             "Android Studio"
         ],
 
-        Herramientas : [
+        Herramientas: [
             "Git",
             "GitHub",
             "VS Code"
         ],
 
-        Lenguajes:[
+        Lenguajes: [
             "Python",
             "Java",
             "Javascript",
             "C#"
         ]
-}
+    };
 
     return (
-
         <section className="skills">
 
             <h2>Tecnologías</h2>
 
-            <div className="skills-container">
-                <h3>Lenguajes de progración</h3>
-                <div className="Skills-lenguaje">
-                    {skills.Lenguajes.map((skill)=>(
-                        <span key={skill} className="skill">
-                            {skill}
-                        </span>
-                    ))}
-                </div>
+            <div className="skills-list">
 
-                <div className="skills-container">
-                    <h3>Frontend</h3>
-                    <div className="Skills-lenguaje">
-                        {skills.frontend.map((skill) => (
+                {/* Lenguajes */}
+                <div className="skill-category">
+                    <h3>Lenguajes</h3>
+
+                    <div className="skills-items">
+                        {skills.Lenguajes.map((skill) => (
                             <span key={skill} className="skill">
-                            {skill}
-                        </span>
+                                {skill}
+                            </span>
                         ))}
                     </div>
                 </div>
 
-                <div className="skills-container">
+                {/* Frontend */}
+                <div className="skill-category">
+                    <h3>Frontend</h3>
+
+                    <div className="skills-items">
+                        {skills.frontend.map((skill) => (
+                            <span key={skill} className="skill">
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Backend */}
+                <div className="skill-category">
                     <h3>Backend</h3>
-                    <div className="Skills-lenguaje">
+
+                    <div className="skills-items">
                         {skills.backend.map((skill) => (
                             <span key={skill} className="skill">
                                 {skill}
@@ -79,9 +87,11 @@ function Skills() {
                     </div>
                 </div>
 
-                <div className="skills-container">
-                    <h3>Desarrollo Movíl</h3>
-                    <div className="Skills-lenguaje">
+                {/* Desarrollo móvil */}
+                <div className="skill-category">
+                    <h3>Desarrollo Móvil</h3>
+
+                    <div className="skills-items">
                         {skills.Mobile.map((skill) => (
                             <span key={skill} className="skill">
                                 {skill}
@@ -90,22 +100,26 @@ function Skills() {
                     </div>
                 </div>
 
-                <div className="skills-container">
+                {/* Base de datos */}
+                <div className="skill-category">
                     <h3>Base de datos</h3>
-                    <div className="Skills-lenguaje">
+
+                    <div className="skills-items">
                         {skills.DataBase.map((skill) => (
-                            <span className="skill" key={skill}>
+                            <span key={skill} className="skill">
                                 {skill}
                             </span>
                         ))}
                     </div>
                 </div>
 
-                <div className="skills-container">
+                {/* Herramientas */}
+                <div className="skill-category">
                     <h3>Herramientas</h3>
-                    <div className="Skills-lenguaje">
-                        {skills.Herramientas.map((skill) =>(
-                            <span className="skill" key={skill}>
+
+                    <div className="skills-items">
+                        {skills.Herramientas.map((skill) => (
+                            <span key={skill} className="skill">
                                 {skill}
                             </span>
                         ))}
@@ -115,9 +129,7 @@ function Skills() {
             </div>
 
         </section>
-
     );
-
 }
 
 export default Skills;
