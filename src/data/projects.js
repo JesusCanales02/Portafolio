@@ -15,7 +15,7 @@ const projects = [
             "MySQL",
             "Bootstrap",
             "CSS",
-            "Javavascript"
+            "JavaScript"
         ],
         github: "https://github.com/JesusCanales02/Maquilados",
         demo: ""

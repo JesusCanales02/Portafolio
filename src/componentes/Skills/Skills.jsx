@@ -36,7 +36,7 @@ function Skills() {
         Lenguajes: [
             "Python",
             "Java",
-            "Javascript",
+            "JavaScript",
             "C#"
         ]
     };

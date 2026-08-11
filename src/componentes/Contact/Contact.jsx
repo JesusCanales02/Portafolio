@@ -16,20 +16,20 @@ function Contact() {
                 <GitCommitVertical size={15}/>
                 <span>
                 GitHub:
-                github.com/JesusCanales02
+                https://github.com/JesusCanales02
                 </span>
             </p>
             <p>
                 <BriefcaseBusiness size={15}/>
                 <span>
                 LinkedIn:
-                linkedin.com/in/jesús-canales-rojas-79a841403
+                https://www.linkedin.com/in/jesús-canales-rojas-79a841403
                 </span>
             </p>
             <p>
                 <Phone size={15}/>
                 <span>
-                Télefono:
+                Teléfono:
                 +52 646 947 3859
                 </span>
             </p>
