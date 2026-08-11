@@ -158,3 +158,49 @@
     }
 
 }
+
+.hero-content {
+    animation: fadeUp 0.8s ease-out;
+}
+
+.hero-image {
+    animation: fadeIn 1s ease-out;
+}
+
+.profile-image {
+    animation: imageZoom 1s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes imageZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
