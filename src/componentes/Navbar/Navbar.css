@@ -88,3 +88,10 @@
         transform: translateY(0);
     }
 }
+@media (max-width: 380px) {
+    .navbar {
+        flex-direction: column; /* Apila el nombre arriba y el menú abajo si la pantalla es enana */
+        gap: 8px;
+        padding: 10px;
+    }
+}
