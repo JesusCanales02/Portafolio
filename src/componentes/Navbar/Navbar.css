@@ -11,16 +11,15 @@
     background-color: rgba(15, 23, 42, 0.90);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    box-sizing: border-box; /* IMPORTANTE: Evita que el padding estire la pantalla */
+    box-sizing: border-box;
     animation: navbarDown 0.6s ease-out;
 }
 
-/* --- LOGO Y ENLACES --- */
 .logo {
     color: #ffffff;
     margin: 0;
     cursor: pointer;
-    white-space: nowrap; /* Evita que el nombre se rompa en dos líneas */
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -42,7 +41,6 @@
     color: #ffffff;
 }
 
-/* --- ANIMACIÓN DE ENTRADA --- */
 @keyframes navbarDown {
     from {
         opacity: 0;
@@ -54,30 +52,24 @@
     }
 }
 
-/* --- RESPONSIVO PARA CELULARES (Pantallas de 768px o menos) --- */
+/* --- SOLUCIÓN PARA MOVILES (PANTALLAS MENORES A 768px) --- */
 @media (max-width: 768px) {
     .navbar {
-        padding: 12px 16px; /* Menos espacio a los lados para que todo quepa */
+        flex-direction: column; /* Pone el nombre arriba y los botones abajo */
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 10px;
     }
 
     .logo {
-        font-size: 1.1rem; /* Reduce el tamaño de tu nombre */
+        font-size: 1.2rem;
     }
 
     .nav-links {
-        gap: 12px; /* Reduce el espacio entre Inicio, Proyectos y Contacto */
+        gap: 20px; /* Buena separación entre Inicio, Proyectos y Contacto */
     }
 
     .nav-links a {
-        font-size: 0.85rem; /* Letra un poco más pequeña en celular */
-    }
-}
-
-/* --- RESPONSIVO PARA CELULARES MUY PEQUEÑOS (380px o menos) --- */
-@media (max-width: 380px) {
-    .navbar {
-        flex-direction: column; /* Coloca tu nombre arriba y las opciones abajo */
-        gap: 8px;
-        padding: 10px;
+        font-size: 0.9rem;
     }
 }
