@@ -1,50 +1,59 @@
-.contact{
-
-    padding:100px 80px;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
+.contact {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact p{
-
-    width:500px;
-
-    display:flex;
-    align-items:center;
-    gap:15px;
-
-    margin:18px 0;
-
-    font-size:1.3rem;
-
-    color:#e2e8f0;
-
+.contact p {
+    /* CAMBIO CLAVE: Usa max-width y ancho relativo en lugar de 500px fijos */
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0;
+    font-size: 1.3rem;
+    color: #e2e8f0;
 }
 
-.contact svg{
-
-    color:#3b82f6;
-
-    flex-shrink:0;
-
+/* Fuerza a que los enlaces rompan líneas si la URL es larguísima (LinkedIn) */
+.contact a, 
+.contact span {
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
-@media (max-width: 768px) {
 
-    .contact {
-        padding: 80px 25px;
-        text-align: center;
-        overflow: hidden;
-    }
+.contact svg {
+    color: #3b82f6;
+    flex-shrink: 0;
+}
 
-    .contact p,
-    .contact a {
+.contact a {
     color: #cbd5e1;
     text-decoration: none;
     transition: 0.3s ease;
 }
+
+.contact a:hover {
+    color: #3b82f6;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact p {
+        font-size: 1rem; /* Reduce un poco el tamaño de letra en celular */
+        gap: 10px;
+    }
+}
+    .contact a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 .contact a:hover {
     color: #3b82f6;
