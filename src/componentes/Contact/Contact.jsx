@@ -1,5 +1,6 @@
 import "./Contact.css"
 import {Mail, BriefcaseBusiness, Phone, GitCommitVertical} from "lucide-react"
+//hola
 function Contact() {
     return(
         <>
@@ -13,6 +14,7 @@ function Contact() {
             </p>
 
             <p>
+                
     <GitCommitVertical size={15}/>
 
     <span>
