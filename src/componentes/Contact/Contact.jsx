@@ -13,19 +13,35 @@ function Contact() {
             </p>
 
             <p>
-                <GitCommitVertical size={15}/>
-                <span>
-                GitHub:
-                https://github.com/JesusCanales02
-                </span>
+    <GitCommitVertical size={15}/>
+
+    <span>
+        GitHub:{" "}
+        <a
+            href="https://github.com/JesusCanales02"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            github.com/JesusCanales02
+        </a>
+    </span>
             </p>
+
             <p>
-                <BriefcaseBusiness size={15}/>
+            <BriefcaseBusiness size={15}/>
+
                 <span>
-                LinkedIn:
-                https://www.linkedin.com/in/jesús-canales-rojas-79a841403
+                    LinkedIn:{" "}
+                <a
+                    href="https://www.linkedin.com/in/jesús-canales-rojas-79a841403"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                linkedin.com/in/jesús-canales-rojas-79a841403
+                </a>
                 </span>
             </p>
+            
             <p>
                 <Phone size={15}/>
                 <span>

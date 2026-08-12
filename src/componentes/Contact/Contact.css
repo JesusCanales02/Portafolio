@@ -41,9 +41,11 @@
 
     .contact p,
     .contact a {
-        max-width: 100%;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-    }
-
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+}
+.contact a:hover {
+    color: #3b82f6;
 }

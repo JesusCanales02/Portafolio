@@ -6,7 +6,7 @@ import requisiciones from "../assets/imagenes/Requisicion.png";
 const projects = [
     {
         id: 1,
-        tittle: "Sistema de requisiciones",
+        title: "Sistema de requisiciones",
         image: requisiciones,
         description: "Sistema web para administrar requisiciones mediante operaciones CRUD.",
         technologies: [
