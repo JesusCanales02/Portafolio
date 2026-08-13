@@ -52,10 +52,9 @@
     }
 }
 
-/* --- SOLUCIÓN PARA MOVILES (PANTALLAS MENORES A 768px) --- */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Pone el nombre arriba y los botones abajo */
+        flex-direction: column; 
         justify-content: center;
         gap: 10px;
         padding: 12px 10px;
@@ -66,7 +65,7 @@
     }
 
     .nav-links {
-        gap: 20px; /* Buena separación entre Inicio, Proyectos y Contacto */
+        gap: 20px; 
     }
 
     .nav-links a {
