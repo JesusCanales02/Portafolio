@@ -2,6 +2,7 @@ import auris from "../assets/imagenes/auris2.png";
 import magicmenu from "../assets/imagenes/magic.png";
 import tareas from "../assets/imagenes/GestorTareas.png";
 import requisiciones from "../assets/imagenes/Requisicion.png";
+import farmacia from "../assets/imagenes/Farmacia.png"
 
 const projects = [
     {
@@ -59,6 +60,21 @@ const projects = [
             "CSS"
         ],
         github: "https://github.com/JesusCanales02/Proyecto-tareas",
+        demo: ""
+    },
+    {
+        id: 5,
+        title: "Gestión de pacientes",
+        image: farmacia,
+        description:
+            "Aplicación web desarrollada con React para la gestión de tareas, permitiendo crear, organizar, actualizar y eliminar actividades mediante una interfaz dinámica e intuitiva.",
+        technologies: [
+            "React",
+            "JavaScript",
+            "Flask",
+            "Supabase"
+        ],
+        github: "https://github.com/JesusCanales02/Patient-manager",
         demo: ""
     }
 ]
