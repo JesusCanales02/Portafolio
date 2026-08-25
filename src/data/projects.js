@@ -8,7 +8,7 @@ const projects = [
         id: 1,
         title: "Sistema de requisiciones",
         image: requisiciones,
-        description: "Sistema web para administrar requisiciones mediante operaciones CRUD.",
+        description: "Sistema web desarrollado para gestionar requisiciones de herramientas y materiales, permitiendo registrar, consultar, actualizar y eliminar solicitudes mediante operaciones CRUD. Cuenta con un frontend desarrollado con Bootstrap y un backend construido con Flask y MySQL.",
         technologies: [
             "Python",
             "Flask",
@@ -25,7 +25,7 @@ const projects = [
         title: "Magic Menu",
         image : magicmenu,
         description:
-            "Aplicación para gestionar y consultar menús digitales.",
+            "Aplicación móvil desarrollada con Flutter para ofrecer a los usuarios una forma más interactiva y atractiva de consultar el menú de un restaurante. Busca mejorar la experiencia del usuario al explorar los platillos mediante una interfaz visual, dinámica y fácil de utilizar.",
         technologies: [
             "Flutter",
             "Dart"
@@ -38,7 +38,7 @@ const projects = [
         title: "Auris",
         image: auris,
         description:
-            "Aplicación móvil para auditorías 5S utilizando Flutter.",
+            "Aplicación móvil desarrollada con Flutter para realizar auditorías de metodología 5S. Permite gestionar departamentos, cuestionarios y evaluaciones, facilitando el seguimiento de las auditorías y el registro de evidencias mediante fotografías y comentarios.",
         technologies: [
             "Flutter",
             "Supabase",
@@ -52,7 +52,7 @@ const projects = [
         title: "Proyecto Tareas",
         image: tareas,
         description:
-            "Aplicación web desarrollada con React para administrar tareas.",
+            "Aplicación web desarrollada con React para la gestión de tareas, permitiendo crear, organizar, actualizar y eliminar actividades mediante una interfaz dinámica e intuitiva.",
         technologies: [
             "React",
             "JavaScript",
