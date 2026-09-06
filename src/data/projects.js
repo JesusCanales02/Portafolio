@@ -5,7 +5,11 @@ import magicmenu from "../assets/imagenes/magic3.png";
 import magicmenu2 from "../assets/imagenes/magic2.png";
 import magicmenu4 from "../assets/imagenes/magic4.png";
 import tareas from "../assets/imagenes/GestorTareas.png";
+import tareas1 from "../assets/imagenes/gestor1.png";
+import tareas2 from "../assets/imagenes/gestor2.png";
 import requisiciones from "../assets/imagenes/Requisicion.png";
+import requisiciones1 from "../assets/imagenes/Requis.jpeg";
+import requisiciones2 from "../assets/imagenes/Requis1.jpeg";
 import farmacia from "../assets/imagenes/Farmacia.png";
 import farmacia1 from "../assets/imagenes/far1.png";
 import farmacia2 from "../assets/imagenes/far2.png";
@@ -18,7 +22,9 @@ const projects = [
         title: "Sistema de requisiciones",
 
         images: [
-            requisiciones
+            requisiciones,
+            requisiciones1,
+            requisiciones2
         ],
 
         description:
@@ -96,7 +102,9 @@ const projects = [
         title: "Proyecto Tareas",
 
         images: [
-            tareas
+            tareas,
+            tareas1,
+            tareas2
         ],
 
         description:

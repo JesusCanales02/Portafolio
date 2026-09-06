@@ -1,11 +1,9 @@
-/* ==========================================
-   ESTILOS GENERALES (Afecta a todas)
-   ========================================== */
+
 .project-card {
     background: #1e293b;
     border-radius: 18px;
     padding: 30px 65px;
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #334155;
     margin-bottom: 35px;
     animation: fadeUp 0.7s ease-out;
@@ -23,39 +21,146 @@
     margin-bottom: 20px;
 }
 
-.project-images.single-image {
-    grid-template-columns: 1fr;
+.image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #0f172a;
 }
 
-/* Estilo base estándar para las imágenes */
 .project-image {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     object-position: top;
-    background: #0f172a;
-    border-radius: 12px;
     display: block;
+    transition: transform 0.3s ease;
 }
 
-.project-images.single-image .project-image {
-    height: 320px;
-    object-fit: cover;
-    object-position: top;
+.image-wrapper:hover .project-image {
+    transform: scale(1.04);
 }
 
-/* ==========================================
-   EXCEPCIÓN PERSONALIZADA: MAGIC MENU (ID: 2)
-   ========================================== */
-.project-2 .project-image {
-    height: 180px;          /* Altura adaptada para este proyecto */
-    object-fit: contain;    /* Muestra la imagen COMPLETA sin recortar bordes */
-    background: #0f172a;    /* Fondo oscuro para rellenar los bordes vacíos */
+.overlay-zoom {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
 }
 
-/* ==========================================
-   TEXTOS Y BOTONES
-   ========================================== */
+.overlay-zoom span {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: rgba(37, 99, 235, 0.85);
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.image-wrapper:hover .overlay-zoom {
+    opacity: 1;
+}
+
+
+.image-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999; 
+    animation: fadeIn 0.2s ease-out;
+    touch-action: none;
+}
+
+.image-modal-container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    object-fit: contain;
+    user-select: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(30, 41, 59, 0.9);
+    color: white;
+    border: 1px solid #475569;
+    font-size: 1.4rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: -25px;
+}
+
+.next-btn {
+    right: -25px;
+}
+
+.nav-btn:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.image-counter {
+    position: absolute;
+    bottom: -35px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .project-card h3 {
     color: white;
     margin-bottom: 10px;
@@ -98,9 +203,6 @@
     box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
 }
 
-/* ==========================================
-   RESPONSIVO Y ANIMACIONES
-   ========================================== */
 @media (max-width: 768px) {
     .project-card {
         width: 100%;
@@ -114,17 +216,15 @@
     }
 
     .project-image {
-        height: auto;
-        max-height: 220px;
+        height: 180px;
     }
 
-    .tech-container {
-        gap: 8px;
+    .prev-btn {
+        left: 5px;
     }
 
-    .tech {
-        padding: 7px 12px;
-        font-size: 0.8rem;
+    .next-btn {
+        right: 5px;
     }
 }
 
@@ -137,4 +237,9 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
