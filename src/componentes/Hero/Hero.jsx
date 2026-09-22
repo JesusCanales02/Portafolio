@@ -23,7 +23,7 @@ function Hero() {
                 </p>
 
                 <a
-                    href="/Jesús Adrián Canales Rojas CV (ingles).pdf"
+                    href="/CV Jesús Canales(ingles).pdf"
                     download
                     className="btn-primary"
                 >
